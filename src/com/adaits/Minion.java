@@ -20,6 +20,60 @@ public class Minion {
     //Pero los minions solo obedecen a un jefe
 
 
+    public int getCrimenes() {
+        return crimenes;
+    }
+
+    public void setCrimenes(int crimenes) {
+        this.crimenes = crimenes;
+    }
+
+    public String getPalabrafavorita() {
+        return palabrafavorita;
+    }
+
+    public void setPalabrafavorita(String palabrafavorita) {
+        this.palabrafavorita = palabrafavorita;
+    }
+
+    public int getOjos() {
+        return ojos;
+    }
+
+    public void setOjos(int ojos) {
+        this.ojos = ojos;
+    }
+
+    public boolean isGafas() {
+        return gafas;
+    }
+
+    public void setGafas(boolean gafas) {
+        this.gafas = gafas;
+    }
+
+    public ArrayList<String> getHabilidades() {
+        return habilidades;
+    }
+
+    public void setHabilidades(ArrayList<String> habilidades) {
+        this.habilidades = habilidades;
+    }
+
+    public Jefe getJefe() {
+        return jefe;
+    }
+
+    public void setJefe(Jefe jefe) {
+        this.jefe = jefe;
+    }
+
+    public Minion(String nombre, int ojos, boolean gafas) {
+        this.nombre = nombre;
+        this.ojos = ojos;
+        this.gafas = gafas;
+    }
+
     public Minion(String nombre, int crimenes, String palabrafavorita, int ojos, boolean gafas, ArrayList<String> habilidades, Jefe jefe) {
         this.nombre = nombre;
         this.crimenes = crimenes;
@@ -80,6 +134,7 @@ public class Minion {
     }
 
 //Crear una funcion que obtengan todos los minions con mas de un ojo y sin gafas
+
 
 
     //Crear una función que obtenga todos los minions con más de una habilidad
